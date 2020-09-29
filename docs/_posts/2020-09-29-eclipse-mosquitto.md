@@ -9,6 +9,8 @@ Docker Compose dapat mempermudah instalasi sebuah software. Artikel singkat kali
 Eclipse Mosquitto adalah salah satu software popular yang umum dipakai pada sebuah projek Internet of Things.
 Software Eclipse Mosquitto umumnya menggunakan port 1883 untuk protokol MQTT.
 
+## Server Mosquitto Tanpa Password 
+
 Gunakan [repositori Git][repositori-git] untuk melakukan instalasi Mosquitto. Untuk menjalankan Mosquitto tanpa username atau password, hapus folder `config` dan jalankan command
 
 {% highlight shell %}
@@ -17,6 +19,8 @@ $ cd mosquitto-docker
 $ rm -rf config
 $ make install
 {% endhighlight %}
+
+## Server Mosquitto dengan Username dan Password
 
 Untuk menggunakan username dan password, gunakan `Makefile` untuk penambahan username dan password untuk otentikasi MQTT.
 
