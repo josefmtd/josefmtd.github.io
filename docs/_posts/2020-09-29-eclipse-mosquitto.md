@@ -11,8 +11,8 @@ Software Eclipse Mosquitto umumnya menggunakan port 1883 untuk protokol MQTT.
 
 Gunakan [repositori Git][repositori-git] untuk melakukan instalasi Mosquitto. Untuk menjalankan Mosquitto tanpa username atau password, hapus folder `config` dan jalankan command
 
-```
+{% highlight %}
 $ make install
-```
+{% endhighlight %}
 
 [repositori-git]: https://github.com/josefmtd/mosquitto-docker
