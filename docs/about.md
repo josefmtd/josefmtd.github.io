@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: Tentang
 permalink: /about/
 ---
 
-This is a lightweight static blog spot running on GitHub Pages using Jekyll.
+Nama saya Josef Stevanus Matondang dan web-site sederhana ini adalah kumpulan dari tulisan-tulisan singkat percobaan menggunakan Docker dan berbagai toolset pengembangan software. Blog ini dijalankan di atas Jekyll yang berjalan pada platform GitHub Pages.
