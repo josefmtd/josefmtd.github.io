@@ -38,8 +38,8 @@ $ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu 
 Instal Docker Engine dan tambahkan akses user ke Docker CLI
 
 {% highlight shell %}
-# apt install docker-ce docker-ce-cli containerd.io -y
-# usermod -aG docker $USER
+$ sudo apt install docker-ce docker-ce-cli containerd.io -y
+$ sudo usermod -aG docker $USER
 {% endhighlight %}
 
 ## Instalasi Docker Compose
@@ -47,12 +47,12 @@ Instal Docker Engine dan tambahkan akses user ke Docker CLI
 Docker Compose dapat diinstal menggunakan pip3 atau dengan mengunduh file `docker-compose` dari source GitHub.
 
 {% highlight shell %}
-# pip3 install docker-compose
+$ sudo pip3 install docker-compose
 {% endhighlight %}
 
 atau
 
 {% highlight shell %}
-# curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-Linux-x86_64" -o /usr/local/bin/docker-compose
-# chmod +x /usr/local/bin/docker-compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-Linux-x86_64" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
 {% endhighlight %}
