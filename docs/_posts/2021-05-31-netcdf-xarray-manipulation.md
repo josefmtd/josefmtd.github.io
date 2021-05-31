@@ -19,9 +19,14 @@ $ wget https://zenodo.org/record/3250992/files/ffmc.nc
 
 {% highlight python %}
 import xarray as xr
+
+# Load the dataset with Dask dataframe
 ds = xr.open_dataset('ffmc.nc', chunks='auto')
+
+# Filter with DataFrame syntax
 cond = (ds.lat > -10) & (ds.lat < 10) & (ds.lon > 90) & (ds.lon < 150)
 ds_indo = ds.where(cond, drop = True)
 
+# Export to a new netCDF file
 ds_indo.to_netcdf('ffmc_indonesia.nc')
 {% endhighlight %}
