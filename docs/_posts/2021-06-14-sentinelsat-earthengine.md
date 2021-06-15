@@ -28,7 +28,7 @@ $ conda install jupyterlab
 
 ## Query Melalui SentinelAPI
 
-Berikut contoh untuk menggunakan SentinelAPI untuk mendapatkan data 'L2__CO____' dari Sentinel-5P Hub.
+Berikut contoh untuk menggunakan SentinelAPI untuk mendapatkan data `L2__CO____` dari Sentinel-5P Hub.
 
 {% highlight python %}
 from sentinelsat import SentinelAPI, geojson_to_wkt, read_geojson
